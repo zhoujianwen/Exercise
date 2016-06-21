@@ -1,7 +1,7 @@
-# javaweb作业练习题 #
+# javaweb作业习题
 ---
-type: task
-title: 极客学院JavaWeb作业题
+layout: homepage
+title: 极客学院JavaWeb作业习题
 date: 2016-06-11
 modifiedOn: 2016-xx-xx
 ---
