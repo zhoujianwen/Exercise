@@ -10,3 +10,5 @@
 
 
 [源代码](sourcecode/)
+
+mysql version 最好是5.7.9，不然数据库导入可能会出现各种问题。
