@@ -6,7 +6,7 @@
 3、实现通过诗歌的名句搜索该唐诗的作者、题目和全文
 
 
-运行截图：![](img/default.png)
+运行截图：![](imgs/default.png)
 
 
 [源代码](sourcecode/1)
