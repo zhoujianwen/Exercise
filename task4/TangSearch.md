@@ -6,9 +6,9 @@
 3、实现通过诗歌的名句搜索该唐诗的作者、题目和全文
 
 
-运行截图：![](img/default.jpg)
+运行截图：![](img/default.png)
 
 
-[源代码](sourcecode/)
+[源代码](sourcecode/1)
 
 mysql version 最好是5.7.9，不然数据库导入可能会出现各种问题。
