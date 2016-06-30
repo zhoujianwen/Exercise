@@ -9,6 +9,6 @@
 运行截图：![](imgs/default.png)
 
 
-[源代码](sourcecode/1)
+[源代码](SoundCode/1)
 
 mysql version 最好是5.7.9，不然数据库导入可能会出现各种问题。
