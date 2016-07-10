@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>简易计算器</title>
+    <style type="text/css">
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    input {
+        width: 100px;
+    }
+    
+    span {
+        padding: 5px;
+    }
+    
+    select option {
+        text-align: center;
+        vertical-align: middle;
+    }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p><b>简易计算器</b></p>
+        <span>要求：使用HTML及JavaScript开发简易计算器，输入 x、y 以及操作符可以计算出数值，如函数计算器输入 4，5，* 可以返回20，输入3 ，8，+可以等于11.</span>
+        <br>
+        <br>
+        <input type="text" id="num1" />
+        <select id="opstr">
+            <option value="+" selected="selected">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input type="text" id="num2" /><button id="btn" style="margin-left: 5px;"><span> = </span></button>
+        <input type="text" id="result" readonly/>
+        <button id="reset">重置</button>
+    </div>
+    <script type="text/javascript">
+        var btn = document.getElementById("btn"); //获取DOM对象
+        btn.addEventListener("click", calculator); //添加事件
+
+        var reset = document.getElementById("reset"); //重置控件文本内容
+        reset.addEventListener("click",resetAll);
+
+        //计算器操作处理
+        function calculator()
+        {
+            var arrayNum = getNum();
+            if(checkNums(arrayNum))
+            {
+                var operFn = getOperatorFunction(arrayNum[2]);
+                var result = operFn(parseFloat(arrayNum[0]),parseFloat(arrayNum[1]));
+                showResult(result);
+            }else {
+                showResult("Error!");
+            }
+        }
+
+        //重置控件文本内容
+        function resetAll()
+        {
+            document.getElementById("num1").value = "";
+            document.getElementById("num2").value = "";
+            (document.getElementById("opstr")).selectedIndex = 0;
+            document.getElementById("result").value = "";
+        }
+
+        //获取输入的操作数和操作符
+        function getNum()
+        {
+            var num1 = (document.getElementById("num1").value); //操作数1
+            var num2 = (document.getElementById("num2").value); //操作数2
+            var select = document.getElementById("opstr");
+            var operStr = select.options[select.selectedIndex].value;//操作符
+            var arr = [num1,num2,operStr];
+            return arr;
+        }
+
+        //检验输入的数据是否规范
+        function checkNums(arr)
+        {
+            var reg = /^(\d*\.)?\d+$/; //匹配字符串是否为浮点数
+            if(!reg.test(arr[0]))
+            {
+                alert("注意：操作数1必须是数字！");
+                document.getElementById("num1").focus();
+                document.getElementById("num1").select();
+                return false;
+            }else if(!reg.test(arr[1]))
+            {
+                alert("注意：操作数2必须是数字！");
+                document.getElementById("num2").focus();
+                document.getElementById("num2").select();
+            }
+            else if (arr[2] == "/" && arr[1] == 0)
+            {
+                alert("注意：除数不能为零!");
+                document.getElementById("num2").focus();
+                document.getElementById("num2").select();
+                return false;
+            }else{
+                return true;
+            }
+        }
+
+        //显示计算结果
+        function showResult(result)
+        {
+           document.getElementById("result").value = result;
+        }
+
+        //返回计算的处理函数
+        function getOperatorFunction(opstr) {
+            switch (opstr) {
+                case '*':
+                return function(a,b)
+                {
+                   return  a * b;
+                }
+                break;
+                case '/':
+                    return function(a,b)
+                    {
+                        if (!b) {
+                            return 0;
+                        } else {
+                            return  a / b;
+                        }
+                    }
+                 break;
+                case '+':
+                    return function(a,b)
+                    {
+                        return  a + b;
+                    }
+                 break;
+                case '-':
+                    return function(a,b)
+                    {
+                        return  a - b;
+                    }
+                 break;
+            }
+        }
+    </script>
+
+</body>
+
+</html>

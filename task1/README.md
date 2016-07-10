@@ -4,7 +4,7 @@
 运行截图：![](imgs/1.png)
 
 
-[源代码](SoundCode/1)
+[源代码](SoundCode/cn.zhoujianwen/src/one)
 
 
 ##2.写一个函数用于求出整数数组中的最大值
@@ -17,19 +17,20 @@
 运行截图：![](imgs/2.png)
 
 
-[源代码](SoundCode/2)
+[源代码](SoundCode/cn.zhoujianwen/src/two)
 
 
 ##3.动物的不同的叫声
 定义一个动物类(Animal)、猫类(Cat)及狗类(Dog)，用猫类及狗类实现动物类的不同的叫声(voice)。
 
 
+[源代码](SoundCode/cn.zhoujianwen/src/three)
 
 ##4.音乐文件读取工具
 1.读取指定目录的所有mp3文件，包括所有子目录。
 2.将所读取的文件名呈现在控制台。
 
-
+[源代码](SoundCode/cn.zhoujianwen/src/four)
 
 ##总结：
 （1）抽象类与接口之间最根本的区别：
