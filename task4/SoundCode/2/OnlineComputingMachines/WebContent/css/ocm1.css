@@ -1,0 +1,91 @@
+@CHARSET "UTF-8";
+
+body, input, select, div, p, span, form, ul, li, table, th, tr, td, img
+	{
+	margin: 0px;
+	padding: 0px;
+	font-size: 14px;
+	font-weight: normal; /*border:0px;*/
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+ul li {
+	list-style: none;
+}
+
+.calBox {
+	width: 365px;
+	padding: 10px 0px;
+	background: #FDFDFD;
+	border-radius: 5px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -182.5px;
+	margin-top: -259px;
+	box-shadow: 0px 0px 10px rgba(153, 153, 153, 0.8), 0px 0px 10px
+		rgba(0, 0, 0, 0.5) inset;
+	-webkit-box-shadow: 0px 0px 10px rgba(153, 153, 153, 0.8), 0px 0px 10px
+		rgba(0, 0, 0, 0.5) inset;
+	background: #F9F9F9;
+	overflow: hidden;
+}
+
+.calu {
+	width: 345px;
+	padding: 0px 10px;
+}
+
+input {
+	width: 329px;
+	height: 82px;
+	margin: 0px 7px 0px 7px;
+	border-radius: 5px;
+	border: 1px solid #64655F;
+	box-shadow: 0px 5px 2px rgba(157, 157, 145, 0.8) inset;
+	-webkit-box-shadow: 0px 5px 2px rgba(157, 157, 145, 0.8) inset;
+	outline: none;
+	background: #FCFDEB;
+	text-align: right;
+	font-family: "微软雅黑";
+	font-size: 40px;
+}
+
+ul li {
+	list-style: none;
+	width: 55px;
+	height: 55px;
+	line-height: 55px;
+	text-align: center;
+	font-family: 微软雅黑;
+	border: 1px solid #8B8B8B;
+	border-radius: 5px;
+	/* background: url(imgs/bg) repeat-x; */
+	float: left;
+	margin: 12px 6px 0px 6px;
+}
+
+ul li:hover {
+	background-color: #D5CFCF;
+	cursor: pointer;
+}
+
+}
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both
+}
+
+.clearfix {
+	zoom: 1;
+}
