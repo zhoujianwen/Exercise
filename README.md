@@ -7,10 +7,10 @@
 </table>
 
 ##任务 1: Java语言基础##
-- [1.在控制台打印出九九乘法表](task1/SoundCode/)
-- [2.写一个函数用于求出整数数组中的最大值](task1/SoundCode/)
-- [3.动物的不同的叫声](task1/SoundCode/)
-- [4.音乐文件读取工具](task1/SoundCode/)
+- [1.在控制台打印出九九乘法表](/task1/SoundCode/cn.zhoujianwen/src/one)
+- [2.写一个函数用于求出整数数组中的最大值](/task1/SoundCode/cn.zhoujianwen/src/two)
+- [3.动物的不同的叫声](/task1/SoundCode/cn.zhoujianwen/src/three)
+- [4.音乐文件读取工具](/task1/SoundCode/cn.zhoujianwen/src/four)
 
 ##任务 2: 前端基础##
 - [1.开发课程表](task2/SoundCode/1)
