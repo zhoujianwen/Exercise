@@ -13,14 +13,14 @@
 - [4.音乐文件读取工具](/task1/SoundCode/cn.zhoujianwen/src/four)
 
 ##任务 2: 前端基础##
-- [1.开发课程表](task2/SoundCode/1)
-- [2.开发简易计算器](task2/SoundCode/2)
+- [1.开发课程表](/task2/SoundCode/1)
+- [2.开发简易计算器](/task2/SoundCode/2)
 
 ##任务 3: JSP与MySQL入门##
-- [1.制作登陆页面的功能](task3/SoundCode/1)
+- [1.制作登陆页面的功能](/task3/SoundCode/1)
 - [2.设计数据库表结构并进行增删改查操作](task3/SoundCode/2)
-- [3.使用JDBC进行数据操作](task3/SoundCode/3)
+- [3.使用JDBC进行数据操作](/task3/SoundCode/3)
 
 ##任务 4: JSP与前端深入##
-- [1.使用JSP开发全唐诗搜索小网站](task4/basic.html)
-- [2.开发完整计算器](task4/number.html)
+- [1.使用JSP开发全唐诗搜索小网站](/task4/SoundCode/1)
+- [2.开发完整计算器](/task4/SoundCode/2)
