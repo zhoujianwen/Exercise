@@ -27,10 +27,11 @@ public class TangDao {
 			strSql = args.split("=");
 			strSql[0] = "select id,title,author,content from tang where " + strSql[0] + " like ?";
 		}
+		ResultSet rs = null;
 		try {
 			pstmt = connection.prepareStatement(strSql[0]);
 			pstmt.setString(1, "%" + strSql[1] + "%");
-			ResultSet rs = pstmt.executeQuery();
+		    rs = pstmt.executeQuery();
 			while (rs.next()) {
 				tang = new Tang();
 				tang.setId(rs.getInt(1));
@@ -43,6 +44,15 @@ public class TangDao {
 		} catch (SQLException e) {
 			e.printStackTrace();
 			return list;
+		}finally {
+			try {
+				rs.close();
+				pstmt.close();
+				connection.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}			
 		}
 	}
 }
