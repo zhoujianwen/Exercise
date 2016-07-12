@@ -1,4 +1,4 @@
-package cookies;
+package chapter06.cookies;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;
