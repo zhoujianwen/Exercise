@@ -52,8 +52,6 @@ public class PurchaseServlet extends HttpServlet {
 		String url = "/chapter06/CartServlet";
 		url = resp.encodeRedirectURL(url);
 		resp.sendRedirect(url);
-		
-		
 	}
 
 }
