@@ -14,7 +14,7 @@
 	</welcome-file-list>
 	<servlet>
 		<servlet-name>LastAccessServlet</servlet-name>
-		<servlet-class>chapter06.LastAccessServlet</servlet-class>
+		<servlet-class>cookies.LastAccessServlet</servlet-class>
 	</servlet>
 
 	<servlet-mapping>
