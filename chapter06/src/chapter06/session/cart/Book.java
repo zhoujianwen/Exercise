@@ -1,4 +1,4 @@
-package chapter06.session;
+package chapter06.session.cart;
 
 public class Book {
 

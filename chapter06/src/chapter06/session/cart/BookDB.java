@@ -1,4 +1,4 @@
-package chapter06.session;
+package chapter06.session.cart;
 
 import java.util.Collection;
 import java.util.LinkedHashMap;
