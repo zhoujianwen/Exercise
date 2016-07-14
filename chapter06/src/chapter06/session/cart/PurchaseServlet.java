@@ -49,17 +49,22 @@ public class PurchaseServlet extends HttpServlet {
 		}
 
 		cart.add(book);
+		
 		/*
-		 * 以下这段代码 如果浏览器的Cookie功能被禁止，那么服务器端是无法通过Session保存用户会话信息的。 Cookie cookie =
-		 * new Cookie("JSESSIONID", session.getId()); cookie.setMaxAge(60*30);
+		 * 以下这段代码 如果浏览器的Cookie功能被禁止，那么服务器端是无法通过Session保存用户会话信息的。 
+		 * Cookie cookie = new Cookie("JSESSIONID", session.getId()); 
+		 * cookie.setMaxAge(60*30);
 		 * cookie.setPath("/chapter06"); resp.addCookie(cookie);
+		 * 
 		 */
 
 		String url = "/chapter06/CartServlet";
+		
 		/*
 		 * 考虑到浏览器可能不支持Cookie的情况，Servlet规范中还引入了URL重写机制来保存用户的会话信息。
 		 * 所谓URL重写，指的是将Session的会话标识号以参数的形式附加在超链接的URL地址后面。
 		 */
+		
 		url = resp.encodeRedirectURL(url);
 		resp.sendRedirect(url);
 	}
