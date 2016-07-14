@@ -63,6 +63,7 @@ public class PurchaseServlet extends HttpServlet {
 		/*
 		 * 考虑到浏览器可能不支持Cookie的情况，Servlet规范中还引入了URL重写机制来保存用户的会话信息。
 		 * 所谓URL重写，指的是将Session的会话标识号以参数的形式附加在超链接的URL地址后面。
+		 * 
 		 */
 		
 		url = resp.encodeRedirectURL(url);
