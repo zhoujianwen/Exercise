@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>登录</title>
+<style type="text/css">
+label{text-align: right;height:31px;line-height:31px;width:50px;display: inline-block;padding-right:5px;}
+form div{text-align: center;position:relative;width:300px;margin:0px auto;}
+#username,#password{width:150px;margin-bottom:5px;height:25px;line-height:25px;}
+#submit{position:absolute;left:115px;top:75px;}
+#reset{position:absolute;left:170px;top:75px;}
+</style>
+</head>
+<body>
+<form action="LoginServlet" method="post" name="flogin">
+<div>
+<label for="username">用户名</label><input type="text" id="username" name="username"/><br>
+<label for="username">密码</label><input type="password" id="password" name="password"/><br>
+<input type="submit" id="submit" value="登录">
+<input type="reset" id="reset" value="重置">
+</div>
+</form>
+</body>
+</html>
