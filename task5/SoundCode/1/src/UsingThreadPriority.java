@@ -1,5 +1,5 @@
 /**
- * Created by Clement0908 on 2016-7-15.
+ * Created by zhoujianwen.cn on 2016-7-15.
  */
 public class UsingThreadPriority{
     public static void main(String[] args)
